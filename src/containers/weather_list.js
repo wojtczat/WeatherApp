@@ -36,7 +36,7 @@ class WeatherList extends Component{
           <tr>
             <th>City</th>
             <th>Temperature (K)</th>
-            <th>Preasure (hPa)</th>
+            <th>Pressure (hPa)</th>
             <th>Humidity (%)</th>
           </tr>
         </thead>
@@ -51,4 +51,5 @@ class WeatherList extends Component{
 function mapStateToProps({weather}){
   return {weather};  //same as {weather:weather}
 }
+
 export default connect (mapStateToProps)(WeatherList);
